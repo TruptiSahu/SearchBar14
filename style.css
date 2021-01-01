@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hind', sans-serif;
+}
+
+:root {
+  /* --background-color: #fef2dc; */
+  /* --primary-color: #e0acf7; */
+  /* --secondary-color: #46627f; */
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #cb2d3e, #ef473a);
+}
+
+.searchBar {
+  width: auto;
+  height: 70px;
+  background-color: #2f3640;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 70px;
+}
+
+.searchBar:hover,
+.searchBar__btn:hover {
+  cursor: pointer;
+}
+
+.searchBar__text {
+  width: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: transparent;
+  transition: all 0.5s;
+  color: #ee2c2c;
+  letter-spacing: 1px;
+  font-size: 18px;
+
+}
+
+.searchBar__text::placeholder {
+  font-size: 20px;
+
+}
+
+.searchBar:hover .searchBar__text {
+  width: 300px;
+  padding: 0px 15px;
+}
+
+.searchBar__btn {
+  width: 50px;
+  border-radius: 50%;
+  border-width: 3px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar__btn i {
+  font-size: 18px;
+}
+
+.searchBar:hover .searchBar__btn {
+  background: #fff;
+  color: #2f3640;
+}
